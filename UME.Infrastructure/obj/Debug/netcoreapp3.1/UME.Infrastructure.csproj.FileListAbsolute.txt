@@ -1,0 +1,4 @@
+C:\Users\jauvs\source\repos\UME2\UME.Infrastructure\obj\Debug\netcoreapp3.1\UME.Infrastructure.csprojAssemblyReference.cache
+C:\Users\jauvs\source\repos\UME2\UME.Infrastructure\obj\Debug\netcoreapp3.1\UME.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\jauvs\source\repos\UME2\UME.Infrastructure\obj\Debug\netcoreapp3.1\UME.Infrastructure.AssemblyInfo.cs
+C:\Users\jauvs\source\repos\UME2\UME.Infrastructure\obj\Debug\netcoreapp3.1\UME.Infrastructure.csproj.CoreCompileInputs.cache

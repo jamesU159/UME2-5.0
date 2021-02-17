@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="..\wwwroot\css\Bienvenidos.css">
+    <link rel="stylesheet" type="text/css" href="..\wwwroot\css\main.css">
+</head>
+<body>
+
+    <div id="sidebar">
+        <ul>
+            <li>
+                <img src="img/Ume.png" alt="Logo Fazt" class="logo">
+            </li>
+        </ul>
+        <ul>
+            <button class="accordion">Perfil</button>
+            <a href="Actualizacion de perfil2.html"><button class="accordion, icon">Actualizar Perfil</button></a>
+        </ul>
+
+        <button class="accordion">Documentos</button>
+        <div class="panel">
+
+            <a href="Actualizar documentos.html">
+                <button class="accordion">
+                    Actualizar Documentos
+                </button>
+            </a>
+            <a href="Vista Documentos.html">
+                <button class="accordion">
+                    Ver documentos
+                </button>
+            </a>
+        </div>
+
+        <button class="accordion">Excusa</button>
+        <div class="panel">
+            <a href="Registrar Excusa.html">
+                <button class="accordion">
+                    Entregar Excusa
+                </button>
+            </a>
+            <a href="Estado Excusa.html">
+                <button class="accordion">
+                    Ver estado de la excusa
+                </button>
+            </a>
+        </div>
+
+        <button class="accordion">Permiso</button>
+        <div class="panel">
+            <a href="permiso.html">
+                <button class="accordion">
+                    Solicitar un permiso
+                </button>
+            </a>
+            <a href="Estado Permiso.html">
+                <button class="accordion">
+                    Ver estado del permiso
+                </button>
+            </a>
+        </div>
+
+        <button class="accordion">Horario</button>
+        <div class="panel">
+            <a href="Horario Consulta.html">
+                <button class="accordion">
+                    Ver horario
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div id="header">
+
+        <div id="centro1">
+
+            <div id="menu">
+                <ul>
+                    <li><a href="Bienvenidos.html">Volver</a></li>
+                    <li><a href="REPORTE.HTML">Reporte</a></li>
+                    <li><a href="index.html">Cerrar sesion</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <script>
+const btnToggle = document.querySelector('.toggle-btn');
+
+btnToggle.addEventListener('click', function () {
+  console.log('clik')
+  document.getElementById('sidebar').classList.toggle('active');
+  console.log(document.getElementById('sidebar'))
+});</script>
+
+        <script>
+ var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}</script>
+
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
